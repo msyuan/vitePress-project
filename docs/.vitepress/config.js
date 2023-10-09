@@ -7,6 +7,7 @@ export default {
   description: "关注web前端开发为主的博客网站和前端网址大全",
   // 打包目录
   outDir: "../dist",
+  base: "/vitePress-project/",
   head: [
     // 添加图标
     ["link", { rel: "icon", href: "/favicon.ico" }],
