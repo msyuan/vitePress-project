@@ -17,7 +17,7 @@ permissions:
   contents: write
 
 jobs:
-  build:
+  build-and-deploy:
     # 指定运行环境：部署服务器的最新版本
     runs-on: ubuntu-latest
 
