@@ -5,13 +5,16 @@ name: Node.js CI - GitHub Actions Build and Deploy
 
 on:
   push:
-    branches: [ "master" ]
+    branches: 
+      - master
     # 只有在下列路径和文件变更时触发部署
     paths:
       - 'docs/**'
       - 'package.json'
-  pull_request:
-    branches: [ "master" ]
+  #pull_request:
+    #branches: [ "master" ]
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -44,8 +47,8 @@ jobs:
         # GitHub 密钥
         # ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         # 指定仓库 你的github page 仓库
-        # REPOSITORY_NAME: msyuan/vitePress-project
-        # 部署到 deploy-pages 分支
-        # BRANCH: deploy-pages
+        #repository-name: msyuan/vitePress-project
+        # 部署到 gh-pages 分支
+        branch: gh-pages
         # 静态文件所在目录：vitepress 生成的静态文件存放的地方
-        FOLDER: docs/.vitepress/dist
+        folder: docs/.vitepress/dist
