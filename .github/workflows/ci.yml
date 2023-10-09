@@ -51,4 +51,4 @@ jobs:
         # 部署到 gh-pages 分支
         branch: gh-pages
         # 静态文件所在目录：vitepress 生成的静态文件存放的地方
-        folder: docs/.vitepress/dist
+        folder: dist
