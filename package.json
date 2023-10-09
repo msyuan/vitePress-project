@@ -1,0 +1,25 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs-dev": "vitepress dev docs",
+    "docs-build": "vitepress build docs",
+    "docs-serve": "vitepress serve docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@mdit-vue/shared": "^1.0.0",
+    "prettier": "^3.0.3",
+    "sass": "^1.68.0",
+    "vitepress": "1.0.0-rc.20",
+    "vue": "^3.3.4"
+  },
+  "dependencies": {
+    "element-plus": "^2.3.14",
+    "lodash.debounce": "^4.0.8"
+  }
+}
