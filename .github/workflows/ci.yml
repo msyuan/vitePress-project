@@ -1,9 +1,9 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
 
-name: Node.js CI - GitHub Actions Build and Deploy
+name: GitHub Actions Build and Deploy
 
 on:
+  #手动运行工作流程（workflow_dispatch 事件触发器配置后可以在actions下手动运行工作流）
+  workflow_dispatch:
   push:
     branches: 
       - master
@@ -13,8 +13,8 @@ on:
       - 'package.json'
   #pull_request:
     #branches: [ "master" ]
-permissions:
-  contents: write
+  #permissions:
+    #contents: write
 
 jobs:
   build-and-deploy:
@@ -36,19 +36,22 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'pnpm'
-    # 执行的打包命令    
+    # 执行的打包命令
+    - run: node -v
     - run: pnpm install
     - run: pnpm build
 
     # 部署
     - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@v4  # 使用别人写好的 actions
-      with: # 自定义环境变量
+      # 使用别人写好的 actions
+      uses: JamesIves/github-pages-deploy-action@v4.3.3
+      # 自定义环境变量
+      with:
         # GitHub 密钥
         # ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         # 指定仓库 你的github page 仓库
         #repository-name: msyuan/vitePress-project
-        # 部署到 gh-pages 分支
-        branch: gh-pages
-        # 静态文件所在目录：vitepress 生成的静态文件存放的地方
+        # 部署到 deploy-pages 分支，也就是部署后提交到那个分支
+        branch: deploy-pages
+        # 填写打包好的目录名称
         folder: dist
