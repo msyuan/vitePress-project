@@ -10,7 +10,7 @@ export default [
   {
     text: "技术笔记",
     items: [
-      { text: "VitePress", link: "/note/vitePress" },
+      { text: "VitePress", link: "/note/vitePress/page1" },
       { text: "Vue", link: "/note/vue" },
       { text: "React", link: "/note/react" },
     ],
