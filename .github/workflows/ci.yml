@@ -35,7 +35,6 @@ jobs:
         with:
           node-version: '18.x'
           cache: 'pnpm'
-        run: node -v
 
       # 打包成静态文件
       - name: Build
