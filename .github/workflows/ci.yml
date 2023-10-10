@@ -31,21 +31,30 @@ jobs:
     - uses: actions/checkout@v3
       with:
         persist-credentials: false
+
+    # 安装 pnpm
+    - name: Install pnpm
+      uses: pnpm/action-setup@v2
+      with:
+        version: 8
+
+    # 设置node的版本
     - name: Use Node.js
       # 使用 actions/setup-node@v3 库安装 nodejs，with 提供了一个参数 node-version 表示要安装的 nodejs 版本
       uses: actions/setup-node@v3
-      # 设置node的版本
       with:
         node-version: '18.x'
         cache: 'pnpm'
-    # 执行的打包命令
-    - run: node -v
-    - run: pnpm install
-    - run: pnpm build
 
-    # 部署
+    # 打包成静态文件
+    - name: Build
+      run: node -v
+      run: pnpm install
+      run: pnpm build
+
+    # 部署 - 也就是将打包内容发布到github page
     - name: Deploy
-      # 使用别人写好的 actions
+      # 使用别人写好的 actions去部署
       uses: JamesIves/github-pages-deploy-action@v4.3.3
       # 自定义环境变量
       with:
