@@ -50,8 +50,8 @@ jobs:
         # GitHub 密钥
         # ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         # 指定仓库 你的github page 仓库
-        #repository-name: msyuan/vitePress-project
+        REPOSITORY_NAME: msyuan/vitePress-project
         # 部署到 deploy-pages 分支，也就是部署后提交到那个分支
-        branch: deploy-pages
+        BRANCH: deploy-pages
         # 填写打包好的目录名称
-        folder: dist
+        FOLDER: dist
