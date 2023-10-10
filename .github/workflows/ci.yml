@@ -2,7 +2,7 @@
 name: GitHub Actions Build and Deploy
 
 on:
-  #手动运行工作流程（workflow_dispatch 事件触发器配置后可以在actions下手动运行工作流）
+  # 手动运行工作流程（workflow_dispatch 事件触发器配置后可以在actions下手动运行工作流）
   workflow_dispatch:
   push:
     branches: 
@@ -50,7 +50,6 @@ jobs:
     # 打包成静态文件
     - name: Build
       run: pnpm install && pnpm build
-      run: 
 
     # 部署 - 也就是将打包内容发布到github page
     - name: Deploy
