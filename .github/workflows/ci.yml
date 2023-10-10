@@ -11,57 +11,47 @@ on:
     paths:
       - 'docs/**'
       - 'package.json'
-  #pull_request:
-    #branches: [ "master" ]
-  #permissions:
-    #contents: write
 
 jobs:
   build-and-deploy:
-    # 指定运行环境：部署服务器的最新版本
-    runs-on: ubuntu-latest
-
-    #strategy:
-      #matrix:
-        #node-version: [18.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
+    runs-on: ubuntu-latest  #指定服务器的运行环境：最新版本ubuntu
     steps:
-      # 使用actions/checkout@v3 库克隆代码到 ubuntu 上
-      uses: actions/checkout@v3
-      with:
-        persist-credentials: false
+      # 使用actions/checkout@v3 库拉取代码到 ubuntu 上
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
 
-    # 安装 pnpm
-    - name: Install pnpm
-      uses: pnpm/action-setup@v2
-      with:
-        version: 8
+      # 安装 pnpm
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
 
-    # 设置node的版本
-    - name: Use Node.js
-      # 使用 actions/setup-node@v3 库安装 nodejs，with 提供了一个参数 node-version 表示要安装的 nodejs 版本
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18.x'
-        cache: 'pnpm'
-      run: node -v
+      # 设置node的版本
+      - name: Use Node.js
+        # 使用 actions/setup-node@v3 库安装 nodejs，with 提供了一个参数 node-version 表示要安装的 nodejs 版本
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+          cache: 'pnpm'
+        run: node -v
 
-    # 打包成静态文件
-    - name: Build
-      run: pnpm install && pnpm build
+      # 打包成静态文件
+      - name: Build
+        run: pnpm install && pnpm build
 
-    # 部署 - 也就是将打包内容发布到github page
-    - name: Deploy
-      # 使用别人写好的 actions去部署（将打包文件部署到指定分支上）
-      uses: JamesIves/github-pages-deploy-action@v4.3.3
-      # 自定义环境变量
-      with:
-        # GitHub 密钥
-        # ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        # 指定仓库 你的github page 仓库
-        REPOSITORY_NAME: msyuan/vitePress-project
-        # 部署到 deploy-pages 分支，也就是部署后提交到那个分支
-        BRANCH: deploy-pages
-        # 填写打包好的目录名称
-        FOLDER: dist
+      # 部署 - 也就是将打包内容发布到github page
+      - name: Deploy
+        # 使用别人写好的 actions去部署（将打包文件部署到指定分支上）
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        # 自定义环境变量
+        with:
+          # GitHub 密钥
+          # ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          # 指定仓库 你的github page 仓库
+          REPOSITORY_NAME: msyuan/vitePress-project
+          # 部署到 deploy-pages 分支，也就是部署后提交到那个分支
+          BRANCH: deploy-pages
+          # 填写打包好的目录名称
+          FOLDER: dist
