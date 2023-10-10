@@ -3,7 +3,7 @@ name: GitHub Actions Build and Deploy
 
 on:
   #手动运行工作流程（workflow_dispatch 事件触发器配置后可以在actions下手动运行工作流）
-  workflow_dispatch:
+  #workflow_dispatch:
   push:
     branches: 
       - master
@@ -21,20 +21,22 @@ jobs:
     # 指定运行环境：部署服务器的最新版本
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [18.x]
+    #strategy:
+      #matrix:
+        #node-version: [18.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
       # 使用actions/checkout@v3 库克隆代码到 ubuntu 上
-    - uses: actions/checkout@v3 
-    - name: Use Node.js ${{ matrix.node-version }}、
+    - uses: actions/checkout@v3
+      with:
+        persist-credentials: false
+    - name: Use Node.js
       # 使用 actions/setup-node@v3 库安装 nodejs，with 提供了一个参数 node-version 表示要安装的 nodejs 版本
       uses: actions/setup-node@v3
       # 设置node的版本
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: '18.x'
         cache: 'pnpm'
     # 执行的打包命令
     - run: node -v
