@@ -28,7 +28,7 @@ jobs:
 
     steps:
       # 使用actions/checkout@v3 库克隆代码到 ubuntu 上
-    - uses: actions/checkout@v3
+      uses: actions/checkout@v3
       with:
         persist-credentials: false
 
@@ -45,16 +45,16 @@ jobs:
       with:
         node-version: '18.x'
         cache: 'pnpm'
+      run: node -v
 
     # 打包成静态文件
     - name: Build
-      run: node -v
-      run: pnpm install
-      run: pnpm build
+      run: pnpm install && pnpm build
+      run: 
 
     # 部署 - 也就是将打包内容发布到github page
     - name: Deploy
-      # 使用别人写好的 actions去部署
+      # 使用别人写好的 actions去部署（将打包文件部署到指定分支上）
       uses: JamesIves/github-pages-deploy-action@v4.3.3
       # 自定义环境变量
       with:
