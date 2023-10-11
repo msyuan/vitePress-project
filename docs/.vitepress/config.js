@@ -15,7 +15,7 @@ export default {
   // 主题配置
   themeConfig: {
     // 导航上的logo
-    logo: "http://www.qianduan8.com/images/logo-01.png",
+    logo: "/logo.png",
     // 隐藏logo右边的标题
     siteTitle: false,
     // 导航栏配置
@@ -33,7 +33,7 @@ export default {
     },
     // 站点页脚配置
     footer: {
-      message: "Released under the MIT License",
+      // message: "Released under the MIT License",
       copyright: "Copyright © 2023-present Lao Yuan",
     },
     // 社交和项目链接地址配置
@@ -52,6 +52,6 @@ export default {
       apiKey: "your_api_key",
       indexName: "index_name",
     },
-    returnToTopLabel: "返回顶部",
+    // returnToTopLabel: "返回顶部",
   },
 };

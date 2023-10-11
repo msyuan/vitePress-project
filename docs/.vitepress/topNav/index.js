@@ -23,5 +23,5 @@ export default [
     text: "关于我们",
     link: "/about/page",
   },
-  { text: "更新日志", link: "https://www.qianduan8.com/" },
+  { text: "更新日志", link: "https://github.com/msyuan/vitePress-project" },
 ];
