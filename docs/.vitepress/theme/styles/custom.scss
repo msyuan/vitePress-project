@@ -69,9 +69,20 @@ a:active {
   .content-container {
     margin-left: 20px !important;
   }
-  /* 副标题样式修改 */
-  .container .text {
-    font-size: 46px !important;
+  .VPHome { 
+    /* 标题样式修改 */
+    .name {
+      font-size: 50px;
+    }
+    /* 副标题样式修改 */
+    .text {
+      font-size: 40px;
+      line-height: 56px;
+    }
+    .tagline {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }
 

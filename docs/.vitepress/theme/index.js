@@ -7,7 +7,6 @@ import home from "./components/home.vue";
 import backTop from "./components/backTop.vue";
 
 import DefaultTheme from "vitepress/theme";
-// import "./styles/vars.scss";
 import "./styles/custom.scss";
 import "./styles/site.scss";
 import "./styles/rainbow.css";

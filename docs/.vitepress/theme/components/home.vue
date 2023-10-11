@@ -42,7 +42,7 @@ import { siteData } from '../model/siteData.js'
 /**首页网址推荐**/
 .ui-home {
   width: 1152px;
-  margin: 20px auto;
+  margin: 0 auto 20px;
   .ui-title {
     display: flex;
     align-items: center;

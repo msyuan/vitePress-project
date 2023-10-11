@@ -27,6 +27,14 @@ export const vitePressNote = [
         text: "6. 如何用Github Actions自动化部署到Github Pages？",
         link: "/note/vitePress/page6",
       },
+      {
+        text: "7. VitePress如何非自动化部署到Github Pages？",
+        link: "/note/vitePress/page7",
+      },
+      {
+        text: "8. VitePress部署到Github Pages后发现样式全错乱了怎么办？",
+        link: "/note/vitePress/page8",
+      },
     ],
   },
 ];
