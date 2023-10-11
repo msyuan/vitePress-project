@@ -4,22 +4,16 @@ name: GitHub Actions Build and Deploy
 on:
   # 手动运行工作流程（workflow_dispatch 事件触发器配置后可以在actions下手动运行工作流）
   workflow_dispatch:
-  push:
-    branches: 
-      - master
-    # 只有在下列路径和文件变更时触发部署
-    paths:
-      - 'docs/**'
-      - 'package.json'
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest  #指定服务器的运行环境：最新版本ubuntu
     steps:
-      # 使用actions/checkout@v3 库拉取代码到 ubuntu 上
+      # 使用actions/checkout@v4 库拉取代码到 ubuntu 上
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
+          # 根据网上资料查询此处可以设置为 false。https://github.com/actions/checkout
           persist-credentials: false
 
       # 安装 pnpm
@@ -40,17 +34,15 @@ jobs:
       - name: Build
         run: pnpm install && pnpm build
 
-      # 部署 - 也就是将打包内容发布到github page
+      # 部署到GitHub Pages - 也就是将打包内容发布到GitHub Pages
       - name: Deploy
         # 使用别人写好的 actions去部署（将打包文件部署到指定分支上）
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         # 自定义环境变量
         with:
-          # GitHub 密钥
-          # ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          # 指定仓库 你的github page 仓库
-          REPOSITORY_NAME: msyuan/vitePress-project
+          # 指定仓库：你要发布的仓库路径名
+          repository-name: msyuan/vitePress-project
           # 部署到 deploy-pages 分支，也就是部署后提交到那个分支
-          BRANCH: deploy-pages
-          # 填写打包好的目录名称
-          FOLDER: dist
+          branch: deploy-pages
+          # 填写打包好的目录名称路径，本项目配置在根目录
+          folder: dist
