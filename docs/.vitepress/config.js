@@ -12,6 +12,8 @@ export default {
     // 添加图标
     ["link", { rel: "icon", href: "/favicon.ico" }],
   ],
+  // 获取每个文件最后一次 git 提交的 UNIX 时间戳(ms)，同时它将以合适的日期格式显示在每一页的底部
+  lastUpdated: true, // string | boolean
   // 主题配置
   themeConfig: {
     // 导航上的logo
@@ -53,5 +55,6 @@ export default {
       indexName: "index_name",
     },
     // returnToTopLabel: "返回顶部",
+    lastUpdatedText: "最后更新", // string
   },
 };
