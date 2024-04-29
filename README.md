@@ -5,7 +5,12 @@
 
 ## 背景介绍
 
-原先[前端吧](http://www.qianduan8.com)网站是基于WordPress搭建的网站，想用vitePress搭建老前端吧网站试试，所以才产生这个调试的vitePress项目，方便搭建个人静态博客的项目模板，有详解搭建过程。
+原先[前端吧](http://www.qianduan8.com)网站是基于WordPress搭建的网站，想用vitePress搭建老前端吧网站试试，所以才产生这个调试的vitePress项目，方便搭建个人静态博客的项目模板，预览地址和[前端吧](http://www.qianduan8.com)中都有详解搭建过程文章。
+
+## 详细搭建文章
+
+[VitePress搭建文档博客系列](https://juejin.cn/column/7288992783581396992)
+
 
 
 ## 目录说明
@@ -16,7 +21,7 @@ vitePress-project
   |-docs
     |─.vitepress         // vitepress配置目录（包含网站基本信息配置、自定义主题、顶部、侧边导航配置等）
       |─sideBar          // 侧边导航配置
-      |─theme            // 自定义主题配置（自定组件）
+      |─theme            // 自定义主题配置（自定组件，自定义样式等）
       |─topNav           // 顶部导航配置
       |─config.js        // vitepress网站的基本配置
     |─about              // 存放关于我们文档的目录
