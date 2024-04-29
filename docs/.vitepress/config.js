@@ -1,3 +1,9 @@
+/*
+ * @Description: VitePress配置文件
+ * @Author: laoyuan
+ * @Date: 2023-10-10 15:06:13
+ */
+
 // 头部导航
 import topNav from "./topNav";
 import { vitePressNote } from "./sideBar/vitePressBar";
@@ -54,7 +60,12 @@ export default {
       apiKey: "your_api_key",
       indexName: "index_name",
     },
-    // returnToTopLabel: "返回顶部",
-    lastUpdatedText: "最后更新", // string
+    // returnToTopLabel: "返回顶部", 未生效，所以自己手动写了一些返回顶部的组件
+    lastUpdatedText: "最后更新",
+    // 默认是 next page
+    docFooter: {
+      prev: "上一篇",
+      next: "下一篇",
+    },
   },
 };

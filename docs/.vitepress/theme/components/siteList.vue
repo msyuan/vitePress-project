@@ -1,13 +1,18 @@
+<!--
+ * @Description: 网址导航公用组件
+ * @Author: laoyuan
+ * @Date: 2023-10-10 15:06:13
+-->
 <template>
   <!-- 网址分类模块 -->
   <section class="site-section">
     <!-- 瞄点标题 -->
     <h2 class="title" :id="createTitle">
       {{ props.title }}
-      <a class="anchor" :href="`#${createTitle}`" aria-hidden="true"></a>
+      <a class="header-anchor" :href="`#${createTitle}`" aria-hidden="true"></a>
     </h2>
     <!-- 网址列表 -->
-    <ul class="list">
+    <ul class="list" v-if="props.data.length > 0">
       <li class="item" v-for="(v, index) in props.data" :key="v.name">
         <a class="link" :href="v.link" target="_blank">
           <span class="num">{{ index + 1 }}</span>
@@ -30,11 +35,14 @@ const props = defineProps({
   },
 });
 
-// 生成markdown的目录
+// 生成markdown的侧边栏目录
 const createTitle = computed(() => {
+  if (!props.title) return '';
   return slugify(props.title);
 });
+
 </script>
+
 <style lang="scss" scoped>
 /*单行文本省略号*/
 @mixin single-ellipsis {

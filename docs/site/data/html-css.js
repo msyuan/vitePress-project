@@ -111,6 +111,53 @@ const siteData = [
       },
     ],
   },
+  {
+    title: "H5免费制作",
+    items: [
+      {
+        icon: "",
+        name: "百度智能门户AIPage",
+        desc: "智能化网站建设及小程序开发平台",
+        link: "https://aipage.baidu.com/",
+      },
+      {
+        icon: "",
+        name: "搜狐快海报",
+        desc: "搜狐快站是一款可视化建站工具，包括拖拽生成页面，强大的内容管理，丰富美观的模板，适配所有移动设备，一键生成App等功能。",
+        link: "http://www.kuaizhan.com",
+      },
+      {
+        icon: "",
+        name: "MaKa",
+        desc: "简单、强大的HTML5创作工具。最富设计感的H5微场景交互利器",
+        link: "https://www.maka.im/",
+      },
+      {
+        icon: "",
+        name: "秀米秀制作",
+        desc: "秀米，微信公众号图文排版和H5制作工具",
+        link: "http://xiumi.us/",
+      },
+      {
+        icon: "",
+        name: "iH5",
+        desc: "专业的H5制作工具",
+        link: "https://www.ih5.cn/not-logged-in",
+      },
+      {
+        icon: "",
+        name: "兔展",
+        desc: "专注H5技术实现，是微信H5页面、微场景、微页、微杂志、微信邀请函、场景应用的专业制作平台",
+        link: "http://www.rabbitpre.com/",
+      },
+      {
+        icon: "",
+        name: "咫尺微页",
+        desc: "微信H5页面制作工具，是国内领先的企业微信小程序制作开发工具",
+        link: "https://www.zhichiwangluo.com/produce/",
+      },
+    ],
+  },
 ];
 
 export default siteData;

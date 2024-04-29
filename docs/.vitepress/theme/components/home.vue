@@ -1,6 +1,11 @@
+<!--
+ * @Description: 自定义首页模块
+ * @Author: laoyuan
+ * @Date: 2023-10-10 15:06:13
+-->
 <template>
   <div class="ui-home">
-    <h2 class="ui-title">前端开源项目推荐</h2>
+    <div class="ui-title">前端开源项目推荐</div>
     <ul class="ui-project">
       <li class="item" v-for="v in siteData" :key="v.name">
         <a class="link" :href="v.link" target="_blank">

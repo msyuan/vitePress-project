@@ -7,8 +7,14 @@ a:visited,
 a:active {
   text-decoration: none;
 }
+li {
+  list-style: none;
+}
 
 :root {
+  /* 激活主题颜色修改 */
+  --vp-c-brand-1: #00C68F !important;
+
   /* 按钮颜色 */
   --vp-button-brand-bg: var(--vp-c-brand);
   /* 首页标题和图片渐变颜色 */
@@ -20,6 +26,11 @@ a:active {
 
 .VPNavBarMenuLink.active {
   color: var(--vp-c-brand) !important;
+}
+
+/* 激活文本颜色修改 */
+.active {
+  --vp-c-text-1: var(--vp-c-brand-1);
 }
 
 
