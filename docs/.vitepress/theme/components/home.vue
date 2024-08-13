@@ -67,6 +67,7 @@ import { siteData } from '../model/siteData.js'
     height: 220px;
   }
   .item {
+  	 margin-top: 0;
     .link {
       display: block;
       color: #333;
@@ -87,6 +88,7 @@ import { siteData } from '../model/siteData.js'
       color: #fff;
       text-align: center;
       border-radius: 6px 6px 0 0;
+	  margin: 0;
     }
     .desc {
       line-height: 2;

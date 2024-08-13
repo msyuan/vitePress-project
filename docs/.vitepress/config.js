@@ -13,6 +13,7 @@ export default {
   description: "关注web前端开发为主的博客网站和前端网址大全",
   // 打包目录
   outDir: "../dist",
+  /** 打包项目的根目录 */
   base: "/vitePress-project/",
   head: [
     // 添加图标
@@ -24,7 +25,7 @@ export default {
   themeConfig: {
     // 导航上的logo
     logo: "/logo.png",
-    // 隐藏logo右边的标题
+    // 当为布尔值false时，隐藏logo右边的标题，字符串时就显示标题（siteTitle: '我的标题'）
     siteTitle: false,
     // 导航栏配置
     nav: topNav,

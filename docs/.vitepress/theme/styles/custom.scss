@@ -14,6 +14,8 @@ li {
 :root {
   /* 激活主题颜色修改 */
   --vp-c-brand-1: #00C68F !important;
+  --vp-c-brand: var(--vp-c-brand-1) !important;
+
 
   /* 按钮颜色 */
   --vp-button-brand-bg: var(--vp-c-brand);
