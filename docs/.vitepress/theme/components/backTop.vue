@@ -1,3 +1,8 @@
+<!--
+ * @Description: 返回顶部自定义组件
+ * @Author: laoyuan
+ * @Date: 2023-10-10 15:06:13
+-->
 <template>
   <div :class="['back-top', showIcon ? 'back-top-show': '']">
     <div class="iconfont icon icon-fanhuidingbu2" @click="onScroll"></div>

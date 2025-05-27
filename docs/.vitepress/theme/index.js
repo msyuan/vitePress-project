@@ -5,6 +5,7 @@ import siteList from "./components/siteList.vue";
 import siteFooter from "./components/siteFooter.vue";
 import home from "./components/home.vue";
 import backTop from "./components/backTop.vue";
+import NotFound from "./components/404.vue";
 
 import DefaultTheme from "vitepress/theme";
 import "./styles/custom.scss";
@@ -16,7 +17,7 @@ import "element-plus/dist/index.css";
 
 export default {
   ...DefaultTheme,
-  NotFound: () => "404", // <- this is a Vue 3 functional component
+  // NotFound: () => h(NotFound), // <- this is a Vue 3 functional component
   enhanceApp({ app, router, siteData }) {
     // app is the Vue 3 app instance from createApp()
     // router is VitePress' custom router (see `lib/app/router.js`)
@@ -26,6 +27,7 @@ export default {
     app.component("SiteList", siteList);
     app.component("Home", home);
     app.component("BackTop", backTop);
+    // router.addRoute({ path: "/:pathMatch(.*)*", name: "NotFound", component: NotFound });
   },
   // 自定义布局配置
   Layout: () => {
@@ -40,6 +42,7 @@ export default {
     return h(DefaultTheme.Layout, props, {
       // 自定义文档底部
       "doc-after": () => h(siteFooter),
+      "not-found": () => h(NotFound),
     });
   },
 };

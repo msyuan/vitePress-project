@@ -30,8 +30,8 @@ li {
   color: var(--vp-c-brand) !important;
 }
 
-/* 激活文本颜色修改 */
-.active {
+/* 左侧目录激活的文本颜色修改 */
+.outline-link.active {
   --vp-c-text-1: var(--vp-c-brand-1);
 }
 
