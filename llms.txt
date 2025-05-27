@@ -1,0 +1,29 @@
+# 前端吧
+
+> 关注web前端开发为主的博客网站和网址导航
+
+收集有一大批前端相关的技术网站，包括Vue、React等技术资料的生态网站，方便快速访问。
+
+## Table of Contents
+
+### 从零开始用VitePress搭建个人博客的教程笔记
+
+- [1.从零用VitePress搭建个人轻型博客的正确姿势(1)](/note/vitePress/page1.md)
+- [2.VitePress默认首页和头部导航配置](/note/vitePress/page2.md)
+- [3.VitePress默认主题相关细节配置](/note/vitePress/page3.md)
+- [4.如何自定义布局页面模板？](/note/vitePress/page4.md)
+- [5.第三方组件库的使用-作组件库文档](/note/vitePress/page5.md)
+- [6.如何用Github Actions自动化部署到Github Pages？](/note/vitePress/page6.md)
+- [7. vitePress如何非自动化部署到Github Pages？](/note/vitePress/page7.md)
+- [8. vitePress部署到Github Pages后发现样式错乱怎么办？](/note/vitePress/page8.md)
+
+### Other
+
+- [Button 按钮](/examples/button.md)
+- [Untitled](/about/page.md)
+- [Untitled](/note/react.md)
+- [Untitled](/site/framework.md)
+- [Untitled](/site/html-css.md)
+- [Untitled](/site/page.md)
+- [Vue学习笔记-调试测试](/note/vue.md)
+- [开始访问官网-测试内容](/guide/start.md)
