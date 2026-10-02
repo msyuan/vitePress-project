@@ -1,5 +1,5 @@
 ---
-url: /zh\note\vitePress/page1.md
+url: /vitePress-project/zh/note/vitePress/page1.md
 ---
 # 1.从零用VitePress搭建个人轻型博客的正确姿势(1)
 

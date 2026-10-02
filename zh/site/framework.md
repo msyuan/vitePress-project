@@ -1,4 +1,4 @@
 ---
-url: /zh\site/framework.md
+url: /vitePress-project/zh/site/framework.md
 ---
 

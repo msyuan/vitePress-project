@@ -1,5 +1,5 @@
 ---
-url: /zh\note\vitePress/page4.md
+url: /vitePress-project/zh/note/vitePress/page4.md
 ---
 # 4.如何自定义布局页面模板？
 

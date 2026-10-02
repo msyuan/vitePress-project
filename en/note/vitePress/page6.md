@@ -1,5 +1,5 @@
 ---
-url: /en\note\vitePress/page6.md
+url: /vitePress-project/en/note/vitePress/page6.md
 ---
 # 6. How to Automate Deployment to GitHub Pages with GitHub Actions?
 

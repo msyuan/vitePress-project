@@ -1,5 +1,5 @@
 ---
-url: /zh\note/react.md
+url: /vitePress-project/zh/note/react.md
 ---
 ## React学习笔记
 

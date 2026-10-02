@@ -1,5 +1,5 @@
 ---
-url: /zh\note\vitePress/page7.md
+url: /vitePress-project/zh/note/vitePress/page7.md
 ---
 # 7. vitePress如何非自动化部署到Github Pages？
 

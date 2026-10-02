@@ -1,5 +1,5 @@
 ---
-url: /en\note/vue.md
+url: /vitePress-project/en/note/vue.md
 ---
 # Vue Study Notes - Debugging Test
 

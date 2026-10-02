@@ -1,5 +1,5 @@
 ---
-url: /en\note\vitePress/page7.md
+url: /vitePress-project/en/note/vitePress/page7.md
 ---
 # 7. How to Manually Deploy VitePress to GitHub Pages?
 

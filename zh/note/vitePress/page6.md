@@ -1,5 +1,5 @@
 ---
-url: /zh\note\vitePress/page6.md
+url: /vitePress-project/zh/note/vitePress/page6.md
 ---
 # 6.如何用Github Actions自动化部署到Github Pages？
 

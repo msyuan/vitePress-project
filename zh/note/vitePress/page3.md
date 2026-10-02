@@ -1,5 +1,5 @@
 ---
-url: /zh\note\vitePress/page3.md
+url: /vitePress-project/zh/note/vitePress/page3.md
 ---
 # 3.VitePress默认主题相关细节配置
 

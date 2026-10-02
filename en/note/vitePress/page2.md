@@ -1,5 +1,5 @@
 ---
-url: /en\note\vitePress/page2.md
+url: /vitePress-project/en/note/vitePress/page2.md
 ---
 # 2. VitePress Default Homepage and Header Navigation Configuration
 

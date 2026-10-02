@@ -1,5 +1,5 @@
 ---
-url: /en\note\vitePress/page3.md
+url: /vitePress-project/en/note/vitePress/page3.md
 ---
 # 3. VitePress Default Theme Related Detail Configuration
 

@@ -1,5 +1,5 @@
 ---
-url: /zh\note\vitePress/page2.md
+url: /vitePress-project/zh/note/vitePress/page2.md
 ---
 # 2.VitePress默认首页和头部导航配置
 

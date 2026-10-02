@@ -1,5 +1,5 @@
 ---
-url: /zh\note/vue.md
+url: /vitePress-project/zh/note/vue.md
 ---
 # Vue学习笔记-调试测试
 

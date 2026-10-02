@@ -1,5 +1,5 @@
 ---
-url: /zh\note\vitePress/page5.md
+url: /vitePress-project/zh/note/vitePress/page5.md
 ---
 # 5.第三方组件库的使用-作组件库文档
 

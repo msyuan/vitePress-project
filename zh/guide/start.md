@@ -1,5 +1,5 @@
 ---
-url: /zh\guide/start.md
+url: /vitePress-project/zh/guide/start.md
 ---
 # 开始访问官网-测试内容
 

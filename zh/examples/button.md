@@ -1,5 +1,5 @@
 ---
-url: /zh\examples/button.md
+url: /vitePress-project/zh/examples/button.md
 ---
 # Button 按钮
 

@@ -1,5 +1,5 @@
 ---
-url: /zh\about/page.md
+url: /vitePress-project/zh/about/page.md
 ---
 ## 关于前端吧
 

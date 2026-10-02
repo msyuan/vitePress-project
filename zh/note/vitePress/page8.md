@@ -1,5 +1,5 @@
 ---
-url: /zh\note\vitePress/page8.md
+url: /vitePress-project/zh/note/vitePress/page8.md
 ---
 # 8. vitePress部署到Github Pages后发现样式错乱怎么办？
 
