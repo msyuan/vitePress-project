@@ -19,7 +19,7 @@ export default {
     plugins: [llmstxt()],
   },
   locales: {
-    root: { lang: "zh-Hans", dir: "ltr" },
+    root: { lang: "zh-Hans", dir: "ltr", ...zhConfig },
     zh: { label: "简体中文", lang: "zh-Hans", dir: "ltr", ...zhConfig },
     en: { label: "English", lang: "en-US", dir: "ltr", ...enConfig },
   },
