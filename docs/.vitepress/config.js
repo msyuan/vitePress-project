@@ -19,13 +19,25 @@ export default {
     plugins: [llmstxt()],
   },
   locales: {
-    root: { lang: "zh-Hans", dir: "ltr", ...zhConfig },
-    zh: { label: "简体中文", lang: "zh-Hans", dir: "ltr", ...zhConfig },
+    root: {
+      label: "简体中文",
+      lang: "zh-CN",
+      link: "/zh/", // 重要配置，否则会导致切换中英文时页面报404错误
+      dir: "ltr",
+      ...zhConfig,
+    },
     en: { label: "English", lang: "en-US", dir: "ltr", ...enConfig },
   },
   themeConfig: {
     logo: "/logo.png",
     siteTitle: false,
+    // langSwitcher: {
+    //   text: "Language",
+    //   items: [
+    //     { text: "简体中文", link: "/" },
+    //     { text: "English", link: "/en/" },
+    //   ],
+    // },
     // 右侧边栏配置，默认值是"In hac pagina"
     outlineTitle: "本页目录",
     // 编辑链接
