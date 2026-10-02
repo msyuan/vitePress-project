@@ -4,39 +4,28 @@
  * @Date: 2023-10-10 15:06:13
  */
 
-// 头部导航
-import topNav from "./topNav";
-import { vitePressNote } from "./sideBar/vitePressBar";
 import llmstxt from "vitepress-plugin-llms";
+import zhConfig from "../zh/config";
+import enConfig from "../en/config";
 
 export default {
   title: "前端吧",
   description: "关注web前端开发为主的博客网站和前端网址大全",
-  // 打包目录
   outDir: "../dist",
-  /** 打包项目的根目录 */
   base: "/vitePress-project/",
-  head: [
-    // 添加图标
-    ["link", { rel: "icon", href: "/favicon.ico" }],
-  ],
-  // 获取每个文件最后一次 git 提交的 UNIX 时间戳(ms)，同时它将以合适的日期格式显示在每一页的底部
-  lastUpdated: true, // string | boolean
+  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
+  lastUpdated: true,
   vite: {
     plugins: [llmstxt()],
   },
-  // 主题配置
+  locales: {
+    root: { lang: "zh-Hans", dir: "ltr" },
+    zh: { label: "简体中文", lang: "zh-Hans", dir: "ltr", ...zhConfig },
+    en: { label: "English", lang: "en-US", dir: "ltr", ...enConfig },
+  },
   themeConfig: {
-    // 导航上的logo
     logo: "/logo.png",
-    // 当为布尔值false时，隐藏logo右边的标题，字符串时就显示标题（siteTitle: '我的标题'）
     siteTitle: false,
-    // 导航栏配置
-    nav: topNav,
-    // 左侧导航栏
-    sidebar: {
-      "/note/vitePress": vitePressNote,
-    },
     // 右侧边栏配置，默认值是"In hac pagina"
     outlineTitle: "本页目录",
     // 编辑链接

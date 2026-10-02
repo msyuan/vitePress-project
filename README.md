@@ -41,3 +41,6 @@ vitePress-project
 4.  新建 Pull Request
 
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=msyuan/vitePress-project&type=Date)](https://www.star-history.com/#msyuan/vitePress-project&Date)
