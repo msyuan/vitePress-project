@@ -1,5 +1,126 @@
 ---
-url: /note/vitePress/page1.md
+url: /en\note\vitePress/page1.md
+---
+# 1. The Right Way to Build a Lightweight Personal Blog with VitePress from Scratch (1)
+
+## 1. Preface
+
+Recently I was thinking about giving my little Frontend8 blog an update, but I found that the WordPress version had been stuck at five years ago. A lot has changed since then — it doesn't support direct online updates, and the PHP environment running on the server completely doesn't support the latest WordPress version. If I want to use the latest version, the server environment configuration must be updated, so I can only tinker with it slowly.
+
+Then I wondered whether I could explore the possibility of rebuilding it with VitePress + CMS, so the following are the steps I took to build a pure-documentation blog with VitePress, recorded here.
+
+## 2. VitePress Documentation
+
+First, we should know that VitePress is the little brother of [VuePress](https://vuepress.vuejs.org/). It is built on [Vite](https://github.com/vitejs/vite), while [VuePress](https://vuepress.vuejs.org/) is built on Webpack.
+
+VitePress is a static site generator powered by Vite and Vue 3. Compared with VuePress, it is more minimal, lightweight, and efficient. Its features are as follows:
+
+* Faster dev server startup
+* Faster hot updates
+* Faster builds (uses Rollup internally)
+
+For more differences, see the documentation: https://vitejs.cn/vitepress/#motivation
+
+**Official English Documentation**: https://vitepress.dev/
+
+**Chinese Documentation**:
+
+https://vitejs.cn/vitepress/
+
+https://vitepress.qzxdp.cn/reference/site-config.html
+
+## 3. Initializing the Project
+
+### 1. Create and Initialize the Project Directory
+
+Create a qianduan8 directory, enter it, and run the initialization command
+
+```js
+pnpm init
+```
+
+### 2. Install VitePress in the Local Project
+
+```javascript
+pnpm add -D vitepress
+```
+
+![image-20230928151359486](./images/1.png)
+
+### 3. Configure the Project Directory Structure
+
+We create a **docs/.vitepress** directory along with a config file, a homepage, and public.
+
+The directory structure we create at the start is as follows:
+
+```javascript
+├─ docs
+│  ├─ .vitepress
+│  │  └─ config.js
+│  └─ index.md
+│  └─ public
+└─ package.json
+```
+
+The explanation is as follows:
+
+**docs/.vitepress:**  Used to store global configuration, custom components, custom themes, etc.
+
+* config.js:  The project configuration file.
+
+**public:**  The public file directory, where static assets are stored. (Later, in the homepage and theme configuration, you can reference them directly with "/logo.png")
+
+**index.md**: This is the site homepage.
+
+Among these, config.js is a necessity for configuring a VitePress site. It exports a JS object, and as the project grows larger, the configuration can be extracted out.
+
+Initial config.js configuration:
+
+```javascript
+export default {
+  title: 'Frontend8',
+  description: 'A blog site and frontend directory focused on web frontend development',
+  // Output directory
+  outDir: './dist',
+   head: [
+		// Add icon
+		['link', { rel: 'icon', href: '/favicon.ico' }]
+	],
+}
+```
+
+As shown above, we only simply set the **site title, site description, the dist output directory, and the site icon**. More configurations will later be done in the config.js file.
+
+### 4. Configure Run Scripts
+
+Configure it in package.json as follows:
+
+```javascript
+  "scripts": {
+    "docs-dev": "vitepress dev docs",
+    "docs-build": "vitepress build docs",
+    "docs-serve": "vitepress serve docs"
+  }
+```
+
+### 5. Run Locally
+
+Run the following command
+
+```javascript
+pnpm docs-dev
+```
+
+The result is as follows:
+
+![image.png](./images/2.png)
+
+It ran successfully, but the site is currently empty — it only has a logo title. So next we need to keep improving it, for example configuring navigation, the homepage, custom templates, and so on
+
+---
+
+---
+url: /zh\note\vitePress/page1.md
 ---
 # 1.从零用VitePress搭建个人轻型博客的正确姿势(1)
 
@@ -120,7 +241,17 @@ pnpm docs-dev
 ---
 
 ---
-url: /note/vitePress/page2.md
+url: /en\note\vitePress/page2.md
+---
+# 2. VitePress Default Homepage and Header Navigation Configuration
+
+For more content, see
+[VitePress Blog Building Tutorial Series (2) – VitePress Default Homepage and Header Navigation Configuration](http://www.qianduan8.com/2024.html)
+
+---
+
+---
+url: /zh\note\vitePress/page2.md
 ---
 # 2.VitePress默认首页和头部导航配置
 
@@ -130,7 +261,17 @@ url: /note/vitePress/page2.md
 ---
 
 ---
-url: /note/vitePress/page3.md
+url: /en\note\vitePress/page3.md
+---
+# 3. VitePress Default Theme Related Detail Configuration
+
+For more content, see
+[VitePress Blog Building Tutorial Series (3) – VitePress Default Theme Related Detail Configuration](http://www.qianduan8.com/2030.html)
+
+---
+
+---
+url: /zh\note\vitePress/page3.md
 ---
 # 3.VitePress默认主题相关细节配置
 
@@ -140,7 +281,17 @@ url: /note/vitePress/page3.md
 ---
 
 ---
-url: /note/vitePress/page4.md
+url: /en\note\vitePress/page4.md
+---
+# 4. How to Customize Layout Page Templates?
+
+For more content, see
+[VitePress Blog Building Tutorial Series (4) – How to Customize the Homepage Layout and Modify Theme Styles?](http://www.qianduan8.com/2041.html)
+
+---
+
+---
+url: /zh\note\vitePress/page4.md
 ---
 # 4.如何自定义布局页面模板？
 
@@ -150,7 +301,17 @@ url: /note/vitePress/page4.md
 ---
 
 ---
-url: /note/vitePress/page5.md
+url: /en\note\vitePress/page5.md
+---
+# 5. Using Third-Party Component Libraries - Building Component Library Docs
+
+For more content, see
+[VitePress Blog Building Tutorial Series (5) – Using Third-Party Component Libraries - Building Component Library Documentation?](http://www.qianduan8.com/2048.html)
+
+---
+
+---
+url: /zh\note\vitePress/page5.md
 ---
 # 5.第三方组件库的使用-作组件库文档
 
@@ -160,7 +321,18 @@ url: /note/vitePress/page5.md
 ---
 
 ---
-url: /note/vitePress/page6.md
+url: /en\note\vitePress/page6.md
+---
+# 6. How to Automate Deployment to GitHub Pages with GitHub Actions?
+
+For more content, see
+
+[VitePress Blog Building Tutorial Series (6) – Automating Deployment to GitHub Pages with GitHub Actions](http://www.qianduan8.com/2072.html)
+
+---
+
+---
+url: /zh\note\vitePress/page6.md
 ---
 # 6.如何用Github Actions自动化部署到Github Pages？
 
@@ -171,7 +343,18 @@ url: /note/vitePress/page6.md
 ---
 
 ---
-url: /note/vitePress/page7.md
+url: /en\note\vitePress/page7.md
+---
+# 7. How to Manually Deploy VitePress to GitHub Pages?
+
+For more content, see
+
+[VitePress Blog Building Tutorial Series (7) – How to Manually Deploy VitePress to GitHub Pages?](http://www.qianduan8.com/2097.html)
+
+---
+
+---
+url: /zh\note\vitePress/page7.md
 ---
 # 7. vitePress如何非自动化部署到Github Pages？
 
@@ -182,7 +365,7 @@ url: /note/vitePress/page7.md
 ---
 
 ---
-url: /note/vitePress/page8.md
+url: /zh\note\vitePress/page8.md
 ---
 # 8. vitePress部署到Github Pages后发现样式错乱怎么办？
 
@@ -193,7 +376,60 @@ url: /note/vitePress/page8.md
 ---
 
 ---
-url: /examples/button.md
+url: /en\note\vitePress/page8.md
+---
+# 8. What to Do When the Styles Break After Deploying VitePress to GitHub Pages?
+
+For more content, see
+
+[What to Do When All the Styles Break After Deploying VitePress to GitHub Pages?](http://www.qianduan8.com/2099.html)
+
+---
+
+---
+url: /zh\guide/start.md
+---
+# 开始访问官网-测试内容
+
+[前端吧官网](http://qianduan8.com/)
+
+---
+
+---
+url: /en\examples/button.md
+---
+# Button
+
+## Basic Usage
+
+```vue
+<template>
+  <el-button type="primary">Primary Button</el-button>
+  <el-button type="success">Success Button</el-button>
+  <el-button type="info">Info Button</el-button>
+  <el-button type="warning">Warning Button</el-button>
+  <el-button type="danger">Danger Button</el-button>
+</template>
+```
+
+### Plain Usage
+
+::: details CODE
+
+```vue
+<el-button type="primary" plain>Primary Button</el-button>
+<el-button type="success" plain>Success Button</el-button>
+<el-button type="info" plain>Info Button</el-button>
+<el-button type="warning" plain>Warning Button</el-button>
+<el-button type="danger" plain>Danger Button</el-button>
+```
+
+:::
+
+---
+
+---
+url: /zh\examples/button.md
 ---
 # Button 按钮
 
@@ -226,7 +462,68 @@ url: /examples/button.md
 ---
 
 ---
-url: /about/page.md
+url: /en\guide/start.md
+---
+# Getting Started - Visit the Official Website (Test Content)
+
+[Frontend8 Official Website](http://qianduan8.com/)
+
+---
+
+---
+url: /en\note/react.md
+---
+## React Study Notes
+
+::: tip Tip
+This is a document dedicated to React. You can add a custom title after tip.
+:::
+
+---
+
+---
+url: /en\about/page.md
+---
+## About Frontend8
+
+[Frontend8 (qianduan8.com)](http://qianduan8.com/) is a blog site and frontend resource directory focused mainly on web frontend development technology content. It collects a large number of frontend-related technical resource sites, including Vue.js, React, Node.js, CSS3, HTML5, and JavaScript tutorial sites, popular JS frameworks, icon asset libraries, interaction design, development tools, and more, providing a convenient entry point to these resources.
+
+This project is a personal blog template built to explore the possibility of rebuilding the Frontend8 website based on VitePress + CMS.
+
+Github repository: <https://github.com/msyuan/vitePress-project>
+
+---
+
+---
+url: /en.md
+---
+
+
+---
+
+---
+url: /en\site/framework.md
+---
+
+
+---
+
+---
+url: /en\site/html-css.md
+---
+
+
+---
+
+---
+url: /en\site/page.md
+---
+
+
+---
+
+---
+url: /zh\about/page.md
 ---
 ## 关于前端吧
 
@@ -239,7 +536,7 @@ Github代码地址：<https://github.com/msyuan/vitePress-project>
 ---
 
 ---
-url: /note/react.md
+url: /zh\note/react.md
 ---
 ## React学习笔记
 
@@ -250,28 +547,67 @@ url: /note/react.md
 ---
 
 ---
-url: /site/framework.md
+url: /zh.md
 ---
 
 
 ---
 
 ---
-url: /site/html-css.md
+url: /zh\site/framework.md
 ---
 
 
 ---
 
 ---
-url: /site/page.md
+url: /zh\site/html-css.md
 ---
 
 
 ---
 
 ---
-url: /note/vue.md
+url: /zh\site/page.md
+---
+
+
+---
+
+---
+url: /en\note/vue.md
+---
+# Vue Study Notes - Debugging Test
+
+```javascript
+const VNode = {
+  type: 'div',
+  props: {
+    class: 'name'
+  },
+  children: 'I am text'
+}
+
+// Create the render function
+function render(vnode) {
+  // Generate an element based on type
+  const ele = document.createElement(vnode.type)
+  // Assign the class in props to the className of ele
+  ele.className = vnode.props.class
+  // Assign children to the innerText of ele
+  ele.innerText = vnode.children
+  // Insert ele into body as a child node
+  document.body.appendChild(ele)
+}
+
+render(VNode)
+
+```
+
+---
+
+---
+url: /zh\note/vue.md
 ---
 # Vue学习笔记-调试测试
 
@@ -299,12 +635,3 @@ function render(vnode) {
 render(VNode)
 
 ```
-
----
-
----
-url: /guide/start.md
----
-# 开始访问官网-测试内容
-
-[前端吧官网](http://qianduan8.com/)
