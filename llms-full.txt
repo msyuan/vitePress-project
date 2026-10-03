@@ -120,7 +120,7 @@ It ran successfully, but the site is currently empty — it only has a logo titl
 ---
 
 ---
-url: /vitePress-project/zh/note/vitePress/page1.md
+url: /vitePress-project/notevitePresspage1.md
 ---
 # 1.从零用VitePress搭建个人轻型博客的正确姿势(1)
 
@@ -251,7 +251,7 @@ For more content, see
 ---
 
 ---
-url: /vitePress-project/zh/note/vitePress/page2.md
+url: /vitePress-project/notevitePresspage2.md
 ---
 # 2.VitePress默认首页和头部导航配置
 
@@ -271,7 +271,7 @@ For more content, see
 ---
 
 ---
-url: /vitePress-project/zh/note/vitePress/page3.md
+url: /vitePress-project/notevitePresspage3.md
 ---
 # 3.VitePress默认主题相关细节配置
 
@@ -291,7 +291,7 @@ For more content, see
 ---
 
 ---
-url: /vitePress-project/zh/note/vitePress/page4.md
+url: /vitePress-project/notevitePresspage4.md
 ---
 # 4.如何自定义布局页面模板？
 
@@ -311,7 +311,7 @@ For more content, see
 ---
 
 ---
-url: /vitePress-project/zh/note/vitePress/page5.md
+url: /vitePress-project/notevitePresspage5.md
 ---
 # 5.第三方组件库的使用-作组件库文档
 
@@ -332,7 +332,7 @@ For more content, see
 ---
 
 ---
-url: /vitePress-project/zh/note/vitePress/page6.md
+url: /vitePress-project/notevitePresspage6.md
 ---
 # 6.如何用Github Actions自动化部署到Github Pages？
 
@@ -354,7 +354,7 @@ For more content, see
 ---
 
 ---
-url: /vitePress-project/zh/note/vitePress/page7.md
+url: /vitePress-project/notevitePresspage7.md
 ---
 # 7. vitePress如何非自动化部署到Github Pages？
 
@@ -365,7 +365,7 @@ url: /vitePress-project/zh/note/vitePress/page7.md
 ---
 
 ---
-url: /vitePress-project/zh/note/vitePress/page8.md
+url: /vitePress-project/notevitePresspage8.md
 ---
 # 8. vitePress部署到Github Pages后发现样式错乱怎么办？
 
@@ -420,7 +420,7 @@ url: /vitePress-project/en/examples/button.md
 ---
 
 ---
-url: /vitePress-project/zh/examples/button.md
+url: /vitePress-project/examplesbutton.md
 ---
 # Button 按钮
 
@@ -514,7 +514,7 @@ url: /vitePress-project/en/site/page.md
 ---
 
 ---
-url: /vitePress-project/zh/about/page.md
+url: /vitePress-project/aboutpage.md
 ---
 ## 关于前端吧
 
@@ -527,14 +527,7 @@ Github代码地址：<https://github.com/msyuan/vitePress-project>
 ---
 
 ---
-url: /vitePress-project/zh.md
----
-
-
----
-
----
-url: /vitePress-project/zh/note/react.md
+url: /vitePress-project/notereact.md
 ---
 ## React学习笔记
 
@@ -545,21 +538,21 @@ url: /vitePress-project/zh/note/react.md
 ---
 
 ---
-url: /vitePress-project/zh/site/framework.md
+url: /vitePress-project/siteframework.md
 ---
 
 
 ---
 
 ---
-url: /vitePress-project/zh/site/html-css.md
+url: /vitePress-project/sitepage.md
 ---
 
 
 ---
 
 ---
-url: /vitePress-project/zh/site/page.md
+url: /vitePress-project/sitehtml-css.md
 ---
 
 
@@ -598,7 +591,7 @@ render(VNode)
 ---
 
 ---
-url: /vitePress-project/zh/note/vue.md
+url: /vitePress-project/notevue.md
 ---
 # Vue学习笔记-调试测试
 
@@ -630,7 +623,7 @@ render(VNode)
 ---
 
 ---
-url: /vitePress-project/zh/guide/start.md
+url: /vitePress-project/guidestart.md
 ---
 # 开始访问官网-测试内容
 
