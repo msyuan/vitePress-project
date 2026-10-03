@@ -1,5 +1,5 @@
 ---
-url: /vitePress-project/en/note/vitePress/page1.md
+url: /en/note/vitePress/page1.md
 ---
 # 1. The Right Way to Build a Lightweight Personal Blog with VitePress from Scratch (1)
 

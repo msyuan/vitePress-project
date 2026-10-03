@@ -1,5 +1,5 @@
 ---
-url: /vitePress-project/en/about/page.md
+url: /en/about/page.md
 ---
 ## About Frontend8
 

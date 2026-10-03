@@ -1,5 +1,5 @@
 ---
-url: /vitePress-project/en/guide/start.md
+url: /en/guide/start.md
 ---
 # Getting Started - Visit the Official Website (Test Content)
 

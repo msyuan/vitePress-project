@@ -1,4 +1,4 @@
 ---
-url: /vitePress-project/en/site/page.md
+url: /en/site/page.md
 ---
 

@@ -1,5 +1,5 @@
 ---
-url: /vitePress-project/en/note/vitePress/page4.md
+url: /en/note/vitePress/page4.md
 ---
 # 4. How to Customize Layout Page Templates?
 

@@ -1,5 +1,5 @@
 ---
-url: /vitePress-project/en/note/react.md
+url: /en/note/react.md
 ---
 ## React Study Notes
 

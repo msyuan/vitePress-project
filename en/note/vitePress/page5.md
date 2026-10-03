@@ -1,5 +1,5 @@
 ---
-url: /vitePress-project/en/note/vitePress/page5.md
+url: /en/note/vitePress/page5.md
 ---
 # 5. Using Third-Party Component Libraries - Building Component Library Docs
 
