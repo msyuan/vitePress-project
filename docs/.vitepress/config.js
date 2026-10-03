@@ -41,16 +41,7 @@ export default {
       copyright: "Copyright © 2023-present Lao Yuan",
     },
     // 社交和项目链接地址配置
-    socialLinks: [
-      { icon: "github", link: "https://github.com/msyuan/vitePress-project" },
-      // 也可以自定义svg的icon:
-      // {
-      //   icon: {
-      //     svg: '<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Dribbble</title><path d="M12...6.38z"/></svg>',
-      //   },
-      //   link: "...",
-      // },
-    ],
+    socialLinks: [{ icon: "github", link: "https://github.com/msyuan/vitePress-project" }],
     // 搜索
     algolia: {
       apiKey: "your_api_key",
