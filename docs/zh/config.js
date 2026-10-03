@@ -8,26 +8,26 @@ export const zhTopNav = [
   {
     text: "前端导航",
     items: [
-      { text: "前端综合", link: "/zh/site/page" },
-      { text: "HTML/CSS", link: "/zh/site/html-css" },
-      { text: "框架组件", link: "/zh/site/framework" },
+      { text: "前端综合", link: "/site/page" },
+      { text: "HTML/CSS", link: "/site/html-css" },
+      { text: "框架组件", link: "/site/framework" },
     ],
   },
   {
     text: "技术笔记",
     items: [
-      { text: "VitePress", link: "/zh/note/vitePress/page1" },
-      { text: "Vue", link: "/zh/note/vue" },
-      { text: "React", link: "/zh/note/react" },
+      { text: "VitePress", link: "/note/vitePress/page1" },
+      { text: "Vue", link: "/note/vue" },
+      { text: "React", link: "/note/react" },
     ],
   },
   {
     text: "组件使用",
-    link: "/zh/examples/button",
+    link: "/examples/button",
   },
   {
     text: "关于我们",
-    link: "/zh/about/page",
+    link: "/about/page",
   },
   { text: "更新日志", link: "https://github.com/msyuan/vitePress-project" },
 ];
@@ -38,35 +38,35 @@ export const zhVitePressNote = [
     items: [
       {
         text: "1. VitePress的安装和运行",
-        link: "/zh/note/vitePress/page1",
+        link: "/note/vitePress/page1",
       },
       {
         text: "2. VitePress默认首页和头部导航配置",
-        link: "/zh/note/vitePress/page2",
+        link: "/note/vitePress/page2",
       },
       {
         text: "3. VitePress默认主题相关细节配置",
-        link: "/zh/note/vitePress/page3",
+        link: "/note/vitePress/page3",
       },
       {
         text: "4. 如何自定义首页布局和主题样式修改？",
-        link: "/zh/note/vitePress/page4",
+        link: "/note/vitePress/page4",
       },
       {
         text: "5. 第三方组件库的使用-搭建组件库文档？",
-        link: "/zh/note/vitePress/page5",
+        link: "/note/vitePress/page5",
       },
       {
         text: "6. 如何用Github Actions自动化部署到Github Pages？",
-        link: "/zh/note/vitePress/page6",
+        link: "/note/vitePress/page6",
       },
       {
         text: "7. VitePress如何非自动化部署到Github Pages？",
-        link: "/zh/note/vitePress/page7",
+        link: "/note/vitePress/page7",
       },
       {
         text: "8. VitePress部署到Github Pages后发现样式全错乱了怎么办？",
-        link: "/zh/note/vitePress/page8",
+        link: "/note/vitePress/page8",
       },
     ],
   },
@@ -75,7 +75,7 @@ export const zhVitePressNote = [
 export const zhThemeConfig = {
   nav: zhTopNav,
   sidebar: {
-    "/zh/note/vitePress": zhVitePressNote,
+    "/note/vitePress": zhVitePressNote,
   },
   outlineTitle: "本页目录",
   editLink: {
