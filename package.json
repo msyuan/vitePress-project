@@ -1,10 +1,15 @@
 {
   "name": "qianduan8-demo",
   "version": "1.0.2",
-  "description": "关注web前端开发为主的博客网站和网址导航",
+  "description": "\u5173\u6ce8web\u524d\u7aef\u5f00\u53d1\u4e3a\u4e3b\u7684\u535a\u5ba2\u7f51\u7ad9\u548c\u7f51\u5740\u5bfc\u822a",
   "main": "index.js",
   "type": "module",
-  "keywords": ["vitepress", "vue3", "docs", "mdit-vue"],
+  "keywords": [
+    "vitepress",
+    "vue3",
+    "docs",
+    "mdit-vue"
+  ],
   "author": "laoyuan",
   "license": "MIT",
   "scripts": {
@@ -24,5 +29,10 @@
   "dependencies": {
     "element-plus": "^2.3.14",
     "lodash.debounce": "^4.0.8"
+  },
+  "pnpm": {
+    "overrides": {
+      "lodash": "4.18.0"
+    }
   }
 }
